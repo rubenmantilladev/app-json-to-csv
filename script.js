@@ -1,7 +1,6 @@
 const $jsonForm = document.querySelector("#jsonform");
 const $csvForm = document.querySelector("#csvform");
 const $bConvert = document.querySelector("#bConvert");
-
 // Copy to clipboard
 const $bCopy = document.querySelector("#bCopy");
 
