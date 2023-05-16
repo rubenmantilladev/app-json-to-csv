@@ -55,9 +55,11 @@ $bCopy.addEventListener("click", async () => {
     .writeText($csvForm.value)
     .then(() => {
       $bCopy.innerText = "Copied!";
+      $bCopy.setAttribute("aria-busy", "true");
       setInterval(() => {
         $bCopy.innerText = "Copy";
-      }, 1000);
+        $bCopy.removeAttribute("aria-busy");
+      }, 500);
     })
     .catch((err) => console.log("Error", err));
 });
