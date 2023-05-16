@@ -5,7 +5,7 @@ body {
 #app {
   width: 85%;
   min-width: 300px;
-  margin: 10px auto 0;
+  margin: 15px auto;
 }
 
 h1 {
@@ -71,6 +71,7 @@ button#bCopy {
 
   #app {
     width: 100%;
+    margin-bottom: 1.5rem;
   }
 
 }
@@ -78,5 +79,10 @@ button#bCopy {
 @media (max-width: 480px) {
   textarea {
     height: 60vh;
+  }
+
+  #app {
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
 }
